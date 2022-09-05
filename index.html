@@ -1,20 +1,20 @@
 <html>
   <body>
     <ol>
-      <li>абсолютную гиперссылку на главную страницу сайта example.com; </li>
-<li> абсолютную на главную сайта example.com в протоколе https; </li>
-<li> ссылку на файл на сервере FTP без авторизации; </li>
-<li> ссылку на файл на сервере FTP с авторизацией; </li>
-<li> ссылку на фрагмент страницы некоторого сайта; 
-<li> ссылку на фрагмент текущей страницы; 
-<li> ссылку с двумя параметрами в URL; 
+      <li id="str" href="https://example.com/">абсолютную гиперссылку на главную страницу сайта c; </li>
+<li href="https://example.com/"> абсолютную на главную сайта example.com в протоколе https; </li>
+<li href=""> ссылку на файл на сервере FTP без авторизации; </li>
+<li href="ftp://user:pass123@tavalik.ru/Temp/file.txt"> ссылку на файл на сервере FTP с авторизацией; </li>
+<li href"<a href="ftp://ftp.example.com/file.bin">"> ссылку на фрагмент страницы некоторого сайта; 
+<li hred=#str> ссылку на фрагмент текущей страницы; 
+<li href="https://htmlacademy.ru/blog/articles/"> ссылку с двумя параметрами в URL; 
 <li> список ссылок основной навигации сайта с подписями title; 
 <li> ссылку без href; 
 <li> ссылку с пустым href; 
 <li> ссылку, по которой запрещен переход поисковикам; 
 <li> запрещенную для индексации поисковиками; 
 <li> контекстную в тексте абзаца; 
-<li> ссылку-изображение; 
+<li img = "img.jpg" href  ссылку-изображение; 
 <li> ссылки из прямоугольных и круглых областей картинки (HTML-тег map); 
 <li> относительную на страницу в текущем каталоге; 
 <li> относительную на страницу в каталоге about; 
@@ -23,6 +23,72 @@
 <li> сокращенную на главную; 
 <li> сокращенную ссылку на внутреннюю. 
 <li>Форма должна содержать следующие поля: 
+  
+
+    <h1>Пример формы HTML</h1>
+
+    <form action="/" method="POST">
+
+      <label>
+        Однострочное текстовое поле:<br>
+        <input name="field-name-1" value="начальное значение">
+      </label><br>
+
+      <label>
+        Текстовое поле email:<br>
+        <input name="field-email" value="test@example.com" type="email">
+      </label><br>
+
+      <label>
+        Текстовое поле даты:<br>
+        <input name="field-date" value="2019-08-13" type="date">
+      </label><br>
+
+      <label>
+        Многострочное текстовое поле:<br>
+        <textarea name="field-name-2">начальное значение</textarea>
+      </label><br>
+
+      <label>
+        Список (combobox):<br>
+        <select name="field-name-3">
+          <option value="Значение1">Метка1</option>
+          <option value="Значение2" selected="selected">Метка2</option>
+          <option value="Значение3">Метка3</option>
+        </select>
+      </label><br>
+
+      <label>
+        Список (listbox с множественным выбором):
+        <br>
+        <select name="field-name-4[]" multiple="multiple">
+          <option value="Значение1">Метка1</option>
+          <option value="Значение2" selected="selected">Метка2</option>
+          <option value="Значение3" selected="selected">Метка3</option>
+        </select>
+      </label><br>
+
+      Радиокнопки:<br>
+      <label><input type="radio" checked="checked" name="radio-group-1" value="Значение1">
+        Подпись радиокнопки 1</label>
+      <label><input type="radio" name="radio-group-1" value="Значение2">
+        Подпись радиокнопки 2</label><br>
+
+      Чекбокс:<br>
+      <label><input type="checkbox" checked="checked" name="check-1">
+        Подпись чекбокса ставим справа</label><br>
+
+      Кнопка отправки формы,
+      при нажатии заполненные в форму данные
+      отправятся в формате urlencoded методом
+      POST или GET по адресу URL_отправки_данных:
+      <input type="submit" value="Отправить">
+    </form>
+
+  
+
+ 
+
 <li> имя (текстовое поле); 
 <li> e-mail (поле email); 
 <li> дата рождения (поле даты); 

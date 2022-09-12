@@ -1,7 +1,7 @@
 <html>
   <body>
     <ol>
-      <li> <a id="str" href="https://example.com/">абсолютную гиперссылку на главную страницу сайта c;</a> </li>
+      <li> <a id="str" href="http://example.com/">абсолютную гиперссылку на главную страницу сайта c;</a> </li>
       <li> <a href="https://example.com/"> абсолютную на главную сайта example.com в протоколе https;</a></li>
       <li> <a li href="ftp://ftp.example.com/file.bin"> ссылку на файл на сервере FTP без авторизации;</a> </li>
       <li> <a href="ftp://user:pass123@tavalik.ru/Temp/file.txt"> ссылку на файл на сервере FTP с авторизацией;</a> </li>
@@ -10,7 +10,8 @@
       <li> <a href="https://www.biopodushka.ru/catalog/bedlinen/?utm_source=1&utm_medium=2&utm_campaign=3&utm_content=464&utm_term=3423"> ссылку с двумя параметрами в URL; </a> </li>
       <li> <a href="https://www.biopodushka.ru/" title="Сайт упал" > список ссылок основной навигации сайта с подписями title; </a> </li>
       <li> <a title="Сылки нет(("> ссылку без href; https://github.com/ </a> </li>
-      <li> <a href=" " title="Сылки нет((#2"> ссылку с пустым href; https://github.com/ </a> </li>
+      <li> <a href=" " title="Сылки нет((#2"> ссылку с пустым href; https://github.com/ </a><nofollow> </li>
+      <li><nofollow> <a href="https://www.biopodushka.ru/">ссылку, по которой запрещен переход поисковикам</li>
       <noindex><li> <a href="https://www.biopodushka.ru/"> запрещенную для индексации поисковиками; </noindex>
       <li> <p>  контекстную <a href="https://mellodesign.ru/blogs/kontekstnaya-ssylka#:~:text=%D0%9A%D0%BE%D0%BD%D1%82%D0%B5%D0%BA%D1%81%D1%82%D0%BD%D0%B0%D1%8F%20%D1%81%D1%81%D1%8B%D0%BB%D0%BA%D0%B0%20%E2%80%94%20%D1%8D%D1%82%D0%BE%20%D1%81%D1%81%D1%8B%D0%BB%D0%BA%D0%B0%2C%20%D1%80%D0%B0%D0%B7%D0%BC%D0%B5%D1%89%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F,%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D0%BB%D0%BE%2C%20%D0%BE%D1%82%D0%BB%D0%B8%D1%87%D0%B0%D0%B5%D1%82%D1%81%D1%8F%20%D0%BE%D1%82%20%D0%BE%D1%81%D1%82%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE%20%D1%82%D0%B5%D0%BA%D1%81%D1%82%D0%B0.">ссылку</a> в тексте абзаца; </p>
       <li>  <a href="https://www.biopodushka.ru/"><img scr= "imj.jpg"> </a></li>

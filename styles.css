@@ -25,6 +25,8 @@
 .img{
 	float: left;
 	align-content: flex-start ;
+	margin: auto;
+	
 }
 .table {
 	margin: auto;

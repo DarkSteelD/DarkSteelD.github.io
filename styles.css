@@ -36,13 +36,13 @@
 	border-color: rgb(55, 55, 0);
 	border-style: solid;
 }
-	.table i23{
+.i23{
 		background-color: rgb(55, 0, 0);
 		text-align: center;
 		background-color: rgb(80, 0, 80);
-	}
-	.table i32{
+}
+.i32{
 		background-color: rgb(0, 55, 0);
 		text-align: center;
 		background-color: rgb(80, 80, 0);
-	}
+}

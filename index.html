@@ -1,23 +1,24 @@
-<!DOCTYPE html>	
+<!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" href="styles.css">
+
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
     <title>
       Сайт 1
     </title>
-    <header>
-      <img class="img" src="72fqw2qq3kxh.jpg" alt="logo">
-      <div class = "header">Сайт 1</div>
-      <div id=nav>
-        <a href="github.com/DarkSteelD/DarkSteelD.github.io/blob/main/index.html">GitHub</a>
-        <a href="github.com/DarkSteelD/DarkSteelD.github.io/blob/main/index.html">Link</a>
-        <a href="github.com/DarkSteelD/DarkSteelD.github.io/blob/main/index.html">Sec</a>
-      </div>
-    </header>
-
   </head>
-  <body>
-
+<body>
+  <header class="header">
+    <img class="img" src="72fqw2qq3kxh.jpg" alt="logo">
+    <h1 class="h1">Сайт на быструю руку</h1>
+  </header>
+  <nav class="nav">
+    <div class="box"><a href="#list" >Спискок</a></div>
+    <div class="box"><a href="#table" >Таблица</a></div>
+    <div class="box"><a href="#form" >Форма</a></div>
+  </nav>
+  <div id="content">
+  <div class="list" id="list">
     <ol>
       <li> <a id="str" href="http://example.com/"> абсолютную гиперссылку на главную страницу сайта c </a> </li>
       <li> <a href="https://example.com/"> абсолютную на главную сайта example.com в протоколе https </a></li>
@@ -26,101 +27,117 @@
       <li> <a href="https://ru.wikipedia.org/wiki/%D0%A6%D0%B5%D0%BB%D0%B5%D0%B2%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0#%D0%9C%D0%B8%D0%BA%D1%80%D0%BE%D1%81%D0%B0%D0%B9%D1%82"> ссылку на фрагмент страницы некоторого сайта; </a></li>
       <li> <a href=#str> ссылку на фрагмент текущей страницы; </a> </li>
       <li> <a href="https://www.biopodushka.ru/catalog/bedlinen/?utm_source=1&utm_medium=2&utm_campaign=3&utm_content=464&utm_term=3423"> ссылку с двумя параметрами в URL; </a> </li>
-      <li> <a href="https://www.biopodushka.ru/" title="Сайт упал" > список ссылок основной навигации сайта с подписями title; </a> </li>
+      <li> <a href="https://www.biopodushka.ru/" title="Сайт упал"> список ссылок основной навигации сайта с подписями title; </a> </li>
       <li> <a title="Сылки нет(("> ссылку без href; https://github.com/ </a> </li>
-      <li> <a href=" " title="Сылки нет((#2"> ссылку с пустым href; https://github.com/ </a></nofollow> </li>
+      <li> <a href=" " title="Сылки нет((#2"> ссылку с пустым href; https://github.com/ </a></nofollow>
+      </li>
       <li><a href="https://www.biopodushka.ru/" rel="nofollow">ссылку, по которой запрещен переход поисковикам </a> </li>
-      <li><noindex> <a href="https://www.biopodushka.ru/"> запрещенную для индексации поисковиками; </a> </noindex>
-      <li> <p>  контекстную <a href="https://mellodesign.ru/blogs/kontekstnaya-ssylka#:~:text=%D0%9A%D0%BE%D0%BD%D1%82%D0%B5%D0%BA%D1%81%D1%82%D0%BD%D0%B0%D1%8F%20%D1%81%D1%81%D1%8B%D0%BB%D0%BA%D0%B0%20%E2%80%94%20%D1%8D%D1%82%D0%BE%20%D1%81%D1%81%D1%8B%D0%BB%D0%BA%D0%B0%2C%20%D1%80%D0%B0%D0%B7%D0%BC%D0%B5%D1%89%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F,%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D0%BB%D0%BE%2C%20%D0%BE%D1%82%D0%BB%D0%B8%D1%87%D0%B0%D0%B5%D1%82%D1%81%D1%8F%20%D0%BE%D1%82%20%D0%BE%D1%81%D1%82%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE%20%D1%82%D0%B5%D0%BA%D1%81%D1%82%D0%B0.">ссылку</a> в тексте абзаца; </p>
       <li>
-        <img  src="https://megabook.ru/stream/mediapreview?Key=%D0%90%D1%84%D0%B8%D0%BD%D0%B0%20(%D0%90%D1%84%D0%B8%D0%BD%D0%B0%20%D0%9B%D0%B5%D0%BC%D0%BD%D0%B8%D1%8F%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%8B%20%D0%9A%D1%80%D0%B5%D1%81%D0%B8%D0%BB%D0%B0%D1%8F)&height=200" href="https://www.biopodushka.ru/" height="200" width="200" alt="404"> </li>
-      <li><span>ссылки из прямоугольных и круглых областей картинки (HTML-тег map);</span></li> 
-        <img src="https://megabook.ru/stream/mediapreview?Key=Фигура%20(геометрические%20фигуры)&Width=654&Height=654" width="200" alt="Geoms" usemap="#unit"> 
-        <map name="unit"> 
-          <area shape="rect" coords="20,20,80,80" href="https://www.kubsu.ru/ru/university"> 
-          <area shape="circle" coords="142,84,38" href="https://www.kubsu.ru/ru/education"> 
-          <area shape="poly" coords="38,160,78,98,120,160" href="https://www.kubsu.ru/ru/science"> 
-        </map>
-      <li> <a href="second.html">относительную на страницу в текущем каталоге;  </a> </li>
-      <li> <a href="/about/second.html"> относительную на страницу в каталоге about;  </a> </li>
-      <li> <a href="../second.html">относительную на страницу в каталоге уровнем выше текущего;  </a> </li>
-      <li> <a href="../../second.html">относительную на страницу в каталоге двумя уровнями выше;  </a> </li>
-      <li> <a href ="/main.html">сокращенную на главную;  </a> </li>
-      <li> <a href="../second.html"> сокращенную ссылку на внутреннюю.  </a> </li>
-  </ol>
-  <table cols=5>
-    <tr class="i23">
-      <td>Кофе</td>
-      <td>Чай</td>
-      <td>Сироп</td>
-      <td>Сок</td>
-      <td>Железо</td>
-    </tr>
-    <tr class="i32" colspan="5">
-      <td>Хочу спать</td>
-    </tr>
-    <tr class="i23">
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-    </tr>
-     <tr class="i32">
-      <td colspan="5">Сон - полезно</td>
-    </tr>
-     <tr class="i23">
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-    </tr>
-  </table>
-     <form action="/" method="POST">
+        <noindex> <a href="https://www.biopodushka.ru/"> запрещенную для индексации поисковиками; </a> </noindex>
+      <li>
+        <p> контекстную <a href="https://mellodesign.ru/blogs/">ссылку</a> в тексте абзаца; </p>
+      <li>
+        <img src="https://megabook.ru/stream/mediapreview?Key=%D0%90%D1%84%D0%B8%D0%BD%D0%B0%20(%D0%90%D1%84%D0%B8%D0%BD%D0%B0%20%D0%9B%D0%B5%D0%BC%D0%BD%D0%B8%D1%8F%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%8B%20%D0%9A%D1%80%D0%B5%D1%81%D0%B8%D0%BB%D0%B0%D1%8F)&height=200" href="https://www.biopodushka.ru/" height="200" width="200" alt="404">
+      </li>
+      <li><span>ссылки из прямоугольных и круглых областей картинки (HTML-тег map);</span></li>
+      <img src="https://megabook.ru/stream/mediapreview?Key=Фигура%20(геометрические%20фигуры)&Width=654&Height=654" width="200" alt="Geoms" usemap="#unit">
+      <map name="unit">
+        <area shape="rect" coords="20,20,80,80" href="https://www.kubsu.ru/ru/university">
+        <area shape="circle" coords="142,84,38" href="https://www.kubsu.ru/ru/education">
+        <area shape="poly" coords="38,160,78,98,120,160" href="https://www.kubsu.ru/ru/science">
+      </map>
+      <li> <a href="second.html">относительную на страницу в текущем каталоге; </a> </li>
+      <li> <a href="/about/second.html"> относительную на страницу в каталоге about; </a> </li>
+      <li> <a href="../second.html">относительную на страницу в каталоге уровнем выше текущего; </a> </li>
+      <li> <a href="../../second.html">относительную на страницу в каталоге двумя уровнями выше; </a> </li>
+      <li> <a href="/main.html">сокращенную на главную; </a> </li>
+      <li> <a href="../second.html"> сокращенную ссылку на внутреннюю. </a> </li>
+    </ol>
+  </div>
+  <div class="table" id="table">
+    <table cols=5>
+      <tr class="nect">
+        <td>Кофе</td>
+        <td>Чай</td>
+        <td>Сироп</td>
+        <td>Сок</td>
+        <td>Железо</td>
+      </tr>
+      <tr class="chet">
+        <td>Кофе</td>
+        <td>Чай</td>
+        <td>Сироп</td>
+        <td>Сок</td>
+        <td>Железо</td>
+      </tr>
+      <tr class="nect">
+        <td colspan="5">Хочу спать</td>
+      </tr>
+      <tr class="chet">
+        <td>...</td>
+        <td>...</td>
+        <td>...</td>
+        <td>...</td>
+        <td>...</td>
+      </tr>
+      <tr class="nect">
+        <td colspan="2">Сон - полезно</td>
+        <td colspan="3">Веб - лучше</td>
+      </tr>
+      <tr class="chet">
+        <td>...</td>
+        <td>...</td>
+        <td>...</td>
+        <td>...</td>
+        <td>...</td>
+      </tr>
+    </table>
+  </div>
+  <div class="form" id="form">
+    <form action="/" method="POST">
       <label>
         <br>
-          имя (текстовое поле);
+        имя (текстовое поле);
         </br>
-          <input name="field-name-1" value="ИМЯ">
+        <input name="field-name-1" value="ИМЯ">
       </label>
       <br>
-        <label>
+      <label>
         e-mail (поле email);<br>
-          <input name="field-email" value="test@example.com" type="email">
-        </label>
+        <input name="field-email" value="test@example.com" type="email">
+      </label>
       </br>
 
       <label>
-         дата рождения (поле даты); <br>
+        дата рождения (поле даты); <br>
         <input name="field-date" value="2019-08-13" type="date">
       </label><br>
 
-        Пол:<br>
+      Пол:<br>
       <label><input type="radio" checked="checked" name="radio-group-1">
         Муж</label>
       <label><input type="radio" name="radio-group-1">
         Жен</label><br>
 
-        Количество конечностей:<br>
-        <input type="radio" checked="checked" name="radio-group-2">
-          1<br>
-        <input type="radio" name="radio-group-2">
-          2<br>
-        <input type="radio" name="radio-group-2">
-          3<br>
-        <input type="radio" name="radio-group-2">
-          4<br>
-        <input type="radio" name="radio-group-2">
-          5<br>
-        <label>
-          Сверхспособности:<br>
-            <select name="field-name-3" multiple="multiple">
-              <option value="Значение1">бессмертие</option>
-              <option value="Значение2" selected="selected">прохождение сквозь стены</option>
-              <option value="Значение3">левитация</option>
-            </select>
-        </label><br>
+      Количество конечностей:<br>
+      <input type="radio" checked="checked" name="radio-group-2">
+      1<br>
+      <input type="radio" name="radio-group-2">
+      2<br>
+      <input type="radio" name="radio-group-2">
+      3<br>
+      <input type="radio" name="radio-group-2">
+      4<br>
+      <input type="radio" name="radio-group-2">
+      5<br>
+      <label>
+        Сверхспособности:<br>
+        <select name="field-name-3" multiple="multiple">
+          <option value="Значение1">бессмертие</option>
+          <option value="Значение2" selected="selected">прохождение сквозь стены</option>
+          <option value="Значение3">левитация</option>
+        </select>
+      </label><br>
       <label>
         Биография:<br>
         <textarea name=" Биография">Умер</textarea>
@@ -129,8 +146,10 @@
         Подпись чекбокса ставим справа</label><br>
       <input type="submit" value="Отправить">
     </form>
-    <footer class="footer">
-        <p>&#169; Далер 2022 </p>
-    </footer>
-  </body>
+  </div>
+  
+  </div>
+  <footer class="footer">(c)Daler Khomidov</footer>
+</body>
+
 </html>

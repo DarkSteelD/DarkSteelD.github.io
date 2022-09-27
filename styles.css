@@ -1,4 +1,4 @@
-.form {
+form {
     background-color: #0066ff;
     font-family: Times New Roman;
     font-size: fit;
@@ -96,7 +96,7 @@
 
 }
 
-@media screen and (min-width: 800px) {
+@media (min-width: 600px) {
     .form {
         background-color: #0066ff;
         font-family: Times New Roman;
@@ -105,6 +105,7 @@
         padding-top: 10px;
         padding-bottom: 10px;
         order: 2;
+        
 
     }
 
@@ -116,6 +117,8 @@
         max-width: 960px;
         align-self: center;
         flex-direction: row;
+       
+        margin: auto;
 
     }
 
@@ -129,10 +132,12 @@
     }
 
     #content {
-        align-content: center;
+        align-self: center;
         max-width: 960px;
         display: flex;
         flex-direction: column;
+        margin: auto;
+      
     }
 
     .list {
@@ -195,4 +200,3 @@
         align-self: flex-end;
 
     }
-}

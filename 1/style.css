@@ -1,0 +1,162 @@
+form {
+    background-color: #0066ff;
+    font-family: Times New Roman;
+    font-size: fit;
+    align-content: center;
+
+}
+
+.nav {
+    background-color: #00CED1;
+
+
+}
+
+.box {
+    background-color: #9932CC;
+}
+
+#content {
+    align-content: center;
+}
+
+.list {
+    background-color: #00ff00;
+    font-family: Times New Roman;
+    font-size: 16px;
+    align-content: center;
+}
+
+.table {
+    background-color: #666699;
+    border: solid darkcyan 3px;
+}
+
+.nect {
+    background-color: #99ebff;
+    border: solid whitesmoke 3px;
+}
+
+.chet {
+    background-color: #c2f0c2;
+    border: solid darkcyan 3px;
+}
+
+.header {
+    background-color: darkred;
+}
+
+.footer {
+    background-color: dimgrey;
+}
+
+.img {
+    margin: 10px;
+    align-self: flex-end;
+    height: fit-content;
+    max-height: 120px;
+    width: fit-content;
+    max-width: 120px;
+}
+
+.h1 {
+    margin: 10px;
+    align-self: flex-end;
+
+}
+
+@media (min-width: 600px) {
+    .form {
+        background-color: #0066ff;
+        font-family: Times New Roman;
+        font-size: fit;
+        align-content: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        order: 2;
+        
+
+    }
+
+    .nav {
+        width: 100vw;
+        height: fit-content;
+        display: flex;
+        background-color: #00CED1;
+        max-width: 960px;
+        align-self: center;
+        flex-direction: row;
+       
+        margin: auto;
+
+    }
+
+    .box {
+        padding: 10px;
+        margin: 10px;
+        background-color: #9932CC;
+        height: fit-content;
+        width: fit-content;
+
+    }
+
+    #content {
+        align-self: center;
+        max-width: 960px;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+      
+    }
+
+    .list {
+        background-color: #00ff00;
+        border: solid darkcyan;
+        5px;
+        font-family: Times New Roman;
+        font-size: 16px;
+        align-content: center;
+        padding: 20px;
+        height: fit-content;
+        order: 1;
+
+    }
+
+    .table {
+        background-color: #666699;
+        border: solid darkcyan 3px;
+        padding: 20px;
+        order: 3;
+    }
+
+    .nect {
+        background-color: #99ebff;
+        border: solid darkcyan 3px;
+    }
+
+    .chet {
+        background-color: #c2f0c2;
+        border: solid darkcyan 3px;
+    }
+
+    .header {
+        display: -webkit-inline-flex;
+        display: inline-flex;
+        width: 100vw;
+        height: fit-content;
+        background-color: darkred;
+        padding: 10px;
+
+    }
+
+    .footer {
+        background-color: dimgrey;
+    }
+
+    .img {
+       
+    }
+
+    .h1 {
+       
+    }

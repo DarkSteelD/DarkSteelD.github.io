@@ -1,0 +1,17 @@
+<script defer>
+			
+				function click1() {
+ 					let f1 = document.getElementsByName("field1");
+ 					let f2 = document.getElementsByName("field2");
+ 					let r = document.getElementById("result");
+ 					r.innerHTML = parseint(f1) * parseint(f2);
+ 					return false;
+				}
+			</script> 
+  		<form>
+ 			<input name="field1" type="text">
+ 			<input name="field2" type="text">
+ 			<button id="button1" onclick="return click1();">OK</button>
+ 			<p id="result">Ответ</button>
+
+		</form>

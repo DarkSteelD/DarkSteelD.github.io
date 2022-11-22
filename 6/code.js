@@ -50,27 +50,7 @@ function updatePrice() {
                 price = prices.types[0] * count;
             }
         }
-        else if(price/count-prices.types[select.value - 1] == 10 || price/count-prices.types[select.value - 1] == 110) {
-        price -= 10 * count;
-        }
-        else if(price/count-prices.types[select.value - 1] == 50 || price/count-prices.types[select.value - 1] == 150) {
-            price -= 50 * count;
-        }
-        else if(price/count-prices.types[select.value - 1] == 80 || price/count-prices.types[select.value - 1] == 180) {
-            price -= 80 * count;
-        }
-        else if(price/count-prices.types[select.value - 1] == 60 || price/count-prices.types[select.value - 1] == 160) {
-            price -= 60 * count;
-        }
-        else if(price/count-prices.types[select.value - 1] == 90 || price/count-prices.types[select.value - 1] == 190) {
-            price -= 90 * count;
-        }
-        else if(price/count-prices.types[select.value - 1] == 130 || price/count-prices.types[select.value - 1] == 230) {
-            price -= 130 * count;
-        }
-        else if(price/count-prices.types[select.value - 1] == 140 || price/count-prices.types[select.value - 1] == 240) {
-            price -= 140 * count;
-        }
+       
         let Price = document.getElementById("price");
         Price.innerHTML = "Покупатель, Ваш заказ стоит " + price + " рублей ";
     }

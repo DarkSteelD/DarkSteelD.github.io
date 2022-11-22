@@ -5,7 +5,7 @@ $(document).ready(function () {
 		dots: true,
 		infinite: true,
 		
-		speed: 200,
+		speed: 100,
 		
 		slidesToShow: 4,
 		

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang=ru>
+    <head>
+        <meta charset="UTF-8">
+         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Сайт 1</title>
+        <link rel="stylesheet" href="style.css">    
+        <script src="code.js"></script>
+    </head>
+    <body>
+        <header class>
+            <img class="logo" src="logo.jpg" alt="Картинка">
+            <h1>Продажа ноутбуков</h1>
+        </header>
+        
+        <div class="container-fluid">
+            <h2>Оформление заказа:</h2>
+            <form name="calculator">
+                <div class="row">
+                    <div class="col-5 col-lg-3">
+                        Выберите тип ноутбука:
+                    </div>
+                    <div class="col-5 col-lg-3">
+                        Выберите количество ноутбуков:
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-5 col-lg-3">
+                        <select name="type">
+                            <option value="1">Asus</option>
+                            <option value="2">HD</option>
+                            <option value="3">Mac</option>
+                        </select>
+                    </div>
+                    <div class="col-7 col-lg-4">
+                        <input id="count" type="number" value="1">
+                    </div>
+                    <div class="col-lg-5"></div>
+                    <br>
+                    <div class="row">
+                        <div id="radios">
+                            <div class="col-12 pl-4">
+                                <label><input type="radio" name="options" value="1">&nbsp GeForce3060</label>
+                            </div>
+                            <div class="col-12 pl-4">
+                                <label><input type="radio" name="options" value="2">&nbsp AMD640</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div id="checkboxes">
+                            <div class="col-12 pl-4">
+                                <label><input type="checkbox" name="1">&nbsp Память 512гб</label>
+                            </div>
+                            <div class="col-12 pl-4">
+                                <label><input type="checkbox" name="2">&nbsp USB</label>
+                            </div>
+                            <div class="col-12 pl-4">
+                                <label><input type="checkbox" name="3">&nbsp i7</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <div id="price"></div>
+        </div>
+    </body>
+</html>
